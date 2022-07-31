@@ -35,7 +35,7 @@ public class Radio {
         if (newCurrentStation < 0) {
             return;
         }
-        if (newCurrentStation > stationsCount -1) {
+        if (newCurrentStation > stationsCount - 1) {
             return;
         }
         currentStation = newCurrentStation;
@@ -43,13 +43,13 @@ public class Radio {
 
     public void increaseVolume() {
         if (currentVolume < 100) {
-            currentVolume = currentVolume +1;
+            currentVolume = currentVolume + 1;
         }
     }
 
     public void decreaseVolume() {
         if (currentVolume > 0) {
-            currentVolume = currentVolume -1;
+            currentVolume = currentVolume - 1;
         }
     }
 

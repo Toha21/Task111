@@ -18,7 +18,6 @@ public class RadioTest {
     public void nextLastStationTest() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
-
         radio.next();
 
         int actual = radio.getCurrentStation();
@@ -131,6 +130,7 @@ public class RadioTest {
         int expected = 0;
         Assertions.assertEquals(actual, expected);
     }
+
     @Test
     public void exceedsVolumeTest() {
         Radio radio = new Radio();
